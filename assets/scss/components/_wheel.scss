@@ -1,0 +1,65 @@
+
+.spin-wheel {
+  .container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .spin-wheel-main {
+    width: 96%;
+    max-width: 700px;
+    height: auto;
+    margin: 0 auto 0;
+    position: relative;
+  }
+}
+.spin-wheel-main {
+  
+  .img-wheel {
+    width: 100%;
+    display: block;
+  }
+  .btn-wheel {
+    width: 20%;
+    cursor: pointer;
+    &.rotate-circle {
+      left: 40%;
+      top: 40%;
+      animation: rotate_circle 6s infinite linear;
+    }
+    &:hover {
+      .img-muiten {
+        transform: translateY(-5px);
+      }
+    }
+  }
+  .img-light, .img-light-odd, .img-light-even {
+    width: 100%;
+  }
+  .img-light-odd {
+    animation: display_element 1s infinite ease-in-out;
+  }
+  .img-light-even {
+    animation: display_element 1s infinite ease-in-out;
+    animation-delay: 0.5s;
+  }
+  .img-bg-muiten {
+    width: 28%;
+  }
+  .img-muiten {
+    width: 12%;
+    top: 38%;
+    transition: 0.5s all;
+    &.img-muiten-ani {
+      transform: translate(-50%, -60%);
+    }
+  }
+}
+
+.btn-wheel, .img-light, .img-light-odd, .img-light-even, .img-bg-muiten, .img-muiten {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

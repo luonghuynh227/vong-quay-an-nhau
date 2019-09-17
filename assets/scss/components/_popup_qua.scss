@@ -1,0 +1,20 @@
+.sidebar-left {
+	position: fixed;
+	top: 3%;
+	left: -220px;
+	background: #c25234;
+	width: 220px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	transition: all 0.5s;
+	@include devices(1000) {
+		top: 15%;
+		font-size: 22px;
+  }
+	&.open {
+		left: 0;
+	}
+}
