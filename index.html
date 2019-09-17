@@ -63,11 +63,10 @@
 
 
 			<div class="box-setting d-flex">
-	<div class="share-fb t-center b-r-8">
-		<a href="https://www.facebook.com/vongquayvuive/">
+	<div class="share-fb t-center b-r-8" id="share-fb" data-href="https://luonghuynh227.github.io/vong-quay-an-nhau/">
+		<!-- <a href="https://www.facebook.com/vongquayvuive/"> -->
 			Share facebook
-		</a>
-		
+		<!-- </a> -->
 	</div>
 	<div class="main-setting">
 		<div class="text-setting">Tốc độ quay:</div>
@@ -89,8 +88,22 @@
 
 
 
+<!-- share fb -->
+<script>
+		$(document).ready(function() {
+			var fbButton = document.getElementById('share-fb'),
+					leftPosition = (window.screen.width / 2) - ((600 / 2) + 10);
+					url = $(fbButton).attr('data-href');
 
-		
+			fbButton.addEventListener('click', function() {
+					window.open('https://www.facebook.com/sharer/sharer.php?u=' + url,
+							'facebook-share-dialog',
+							'width=320,height=100%,left='+ leftPosition
+					);
+					return false;
+			});
+		});
+</script>
 <script>
 		$(document).ready(function () {
 		var list_qua = [
