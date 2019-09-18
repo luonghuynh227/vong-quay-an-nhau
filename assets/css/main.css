@@ -376,6 +376,18 @@ button {
   }
 }
 
+@-webkit-keyframes highlight_blink {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes highlight_blink {
+  50% {
+    opacity: 0.5;
+  }
+}
+
 body {
   margin: 0;
   font-family: "vl_booster_nextfy_black";
@@ -486,13 +498,44 @@ body {
   transform: translate(-50%, -60%);
 }
 
-.btn-wheel, .img-light, .img-bg-muiten, .img-muiten {
+.btn-wheel, .img-light, .img-bg-muiten, .img-muiten, .line-light {
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.line-light {
+  display: none;
+  width: 2px;
+  height: 47%;
+  background: #c25335;
+  border-radius: 50px;
+  top: 27%;
+  -webkit-animation: highlight_blink .2s infinite;
+  animation: highlight_blink .2s infinite;
+  -webkit-box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #c25335, 0 0 30px #c25335, 0 0 40px #c25335, 0 0 55px #c25335, 0 0 75px #c25335;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #c25335, 0 0 30px #c25335, 0 0 40px #c25335, 0 0 55px #c25335, 0 0 75px #c25335;
+}
+
+.line-light.line-light1 {
+  -webkit-transform: translate(-50%, -50%) rotateZ(-15deg);
+  -ms-transform: translate(-50%, -50%) rotate(-15deg);
+  transform: translate(-50%, -50%) rotateZ(-15deg);
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+}
+
+.line-light.line-light2 {
+  -webkit-transform: translate(-50%, -50%) rotateZ(15deg);
+  -ms-transform: translate(-50%, -50%) rotate(15deg);
+  transform: translate(-50%, -50%) rotateZ(15deg);
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
 }
 
 .sidebar-left {

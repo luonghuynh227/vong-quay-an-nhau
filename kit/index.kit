@@ -13,8 +13,22 @@
 		</div>
 		<!-- @import components/popup_qua -->
 		<!-- @import partials/javascripts -->
+<!-- share fb -->
+<script>
+		$(document).ready(function() {
+			var fbButton = document.getElementById('share-fb'),
+					leftPosition = (window.screen.width / 2) - ((600 / 2) + 10);
+					url = $(fbButton).attr('data-href');
 
-		
+			fbButton.addEventListener('click', function() {
+					window.open('https://www.facebook.com/sharer/sharer.php?u=' + url,
+							'facebook-share-dialog',
+							'width=320,height=100%,left='+ leftPosition
+					);
+					return false;
+			});
+		});
+</script>
 <script>
 		$(document).ready(function () {
 		var list_qua = [
@@ -130,13 +144,14 @@
 		
 	
 		$('#button').on('click', function () {
+			$('.line-light').hide();
 			if ($('.sidebar-left').hasClass('open')) {
 				$('.sidebar-left').toggleClass('open');
 			}
 			
 			var number_random = random(1, 12);
 			
-			add_random = randomAm(Math.round(add_first - 1), Math.round(add_first - 1));
+			// add_random = randomAm(Math.round(add_first - 1), Math.round(add_first - 1));
 	
 			if (is_start) {
 				
@@ -149,6 +164,7 @@
 					showqua(number_random);
 				 	timeClickAgain();
 				 	if (pos_pause != 0) {
+						$('.line-light').fadeIn();
 						$('.main-sidebar-left .text-notification').text(name_item);
 						$('.sidebar-left').toggleClass('open');
 				 	}

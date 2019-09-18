@@ -53,6 +53,8 @@
   <div class="container">
     <div class="spin-wheel-main">
       <img id="wheel" class="img-wheel first-ani" src="assets/images/wheel.png" alt="">
+      <div class="line-light line-light1"></div>
+      <div class="line-light line-light2"></div>
       <img class="img-bg-muiten" src="assets/images/bg-muiten.png" alt="">
       <img class="img-muiten" src="assets/images/muiten.png" alt="">
       <img id="button" class="btn-wheel rotate-circle" src="assets/images/btn2.png" alt="">
@@ -219,13 +221,14 @@
 		
 	
 		$('#button').on('click', function () {
+			$('.line-light').hide();
 			if ($('.sidebar-left').hasClass('open')) {
 				$('.sidebar-left').toggleClass('open');
 			}
 			
 			var number_random = random(1, 12);
 			
-			add_random = randomAm(Math.round(add_first - 1), Math.round(add_first - 1));
+			// add_random = randomAm(Math.round(add_first - 1), Math.round(add_first - 1));
 	
 			if (is_start) {
 				
@@ -238,6 +241,7 @@
 					showqua(number_random);
 				 	timeClickAgain();
 				 	if (pos_pause != 0) {
+						$('.line-light').fadeIn();
 						$('.main-sidebar-left .text-notification').text(name_item);
 						$('.sidebar-left').toggleClass('open');
 				 	}

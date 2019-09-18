@@ -73,9 +73,29 @@
   }
 }
 
-.btn-wheel, .img-light, .img-bg-muiten, .img-muiten {
+.btn-wheel, .img-light, .img-bg-muiten, .img-muiten, .line-light {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+// line light
+.line-light {
+  display: none;
+  width: 2px;
+  height: 47%;
+  background: #c25335;
+  border-radius: 50px;
+  top: 27%;
+  animation: highlight_blink .2s infinite;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #c25335, 0 0 30px #c25335, 0 0 40px #c25335, 0 0 55px #c25335, 0 0 75px #c25335;
+  &.line-light1 {
+    transform: translate(-50%, -50%) rotateZ(-15deg);
+    transform-origin: bottom;
+  }
+  &.line-light2 {
+    transform: translate(-50%, -50%) rotateZ(15deg);
+    transform-origin: bottom;
+  }
 }

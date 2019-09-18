@@ -234,3 +234,9 @@ button {
     transform: rotate(1800deg);
   }
 }
+
+@keyframes highlight_blink {
+  50% {
+    opacity: 0.5;
+  }
+}
