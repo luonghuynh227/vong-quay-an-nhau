@@ -1,19 +1,6 @@
-var cacheName = 'hello-pwa-2';
+var cacheName = 'vong-quay-2';
 var filesToCache = [
-  '/',
-  './index.html',
-  './assets/css/main.css',
-  './assets/css/main.css.map',
-  './assets/fonts/vl_booster_nextfy_black.ttf',
-  './assets/fonts/vl_booster_nextfy_think.ttf',
-  './assets/images/wheel.png',
-  './assets/images/bg-muiten.png',
-  './assets/images/btn2.png',
-  './assets/images/muiten.png',
-  './assets/images/bg.jpg',
-  './assets/js/jquery-3.4.1.min.js',
-  './assets/js/app.js',
-  './assets/js/main.js',
+  '/'
 ];
 
 /* Start the service worker and cache all of the app's content */
