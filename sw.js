@@ -1,4 +1,4 @@
-var cacheName = 'vong-quay-2';
+var cacheName = 'vong-quay-live';
 var filesToCache = [
   '/',
   'https://luonghuynh227.github.io/vong-quay-an-nhau/index.html',

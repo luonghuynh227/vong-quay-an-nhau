@@ -35,7 +35,7 @@
     }
   ],
   "lang": "en-US",
-  "start_url": "https://luonghuynh227.github.io/vong-quay-an-nhau/index.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#426970",
   "theme_color": "#426970"
