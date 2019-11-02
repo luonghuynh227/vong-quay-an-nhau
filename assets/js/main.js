@@ -3,6 +3,6 @@ window.onload = () => {
 
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-             .register('https://luonghuynh227.github.io/vong-quay-an-nhau/sw.js');
+             .register('./sw-vongquay.js');
   }
 }
