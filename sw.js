@@ -1,19 +1,19 @@
 var cacheName = 'vong-quay-2';
 var filesToCache = [
   '/',
-  './index.html',
-  './assets/css/main.css',
-  './assets/css/main.css.map',
-  './assets/fonts/vl_booster_nextfy_black.ttf',
-  './assets/fonts/vl_booster_nextfy_think.ttf',
-  './assets/images/wheel.png',
-  './assets/images/bg-muiten.png',
-  './assets/images/btn2.png',
-  './assets/images/muiten.png',
-  './assets/images/bg.jpg',
-  './assets/js/jquery-3.4.1.min.js',
-  './assets/js/app.js',
-  './assets/js/main.js'
+  'https://luonghuynh227.github.io/vong-quay-an-nhau/index.html',
+  'https://luonghuynh227.github.io/vong-quay-an-nhau/assets/css/main.css',
+  'https://luonghuynh227.github.io/vong-quay-an-nhau/assets/css/main.css.map',
+  'https://luonghuynh227.github.io/vong-quay-an-nhau/assets/fonts/vl_booster_nextfy_black.ttf',
+  'https://luonghuynh227.github.io/vong-quay-an-nhau/assets/fonts/vl_booster_nextfy_think.ttf',
+  'https://luonghuynh227.github.io/vong-quay-an-nhau/assets/images/wheel.png',
+  'https://luonghuynh227.github.io/vong-quay-an-nhau/assets/images/bg-muiten.png',
+  'https://luonghuynh227.github.io/vong-quay-an-nhau/assets/images/btn2.png',
+  'https://luonghuynh227.github.io/vong-quay-an-nhau/assets/images/muiten.png',
+  'https://luonghuynh227.github.io/vong-quay-an-nhau/assets/images/bg.jpg',
+  'https://luonghuynh227.github.io/vong-quay-an-nhau/assets/js/jquery-3.4.1.min.js',
+  'https://luonghuynh227.github.io/vong-quay-an-nhau/assets/js/app.js',
+  'https://luonghuynh227.github.io/vong-quay-an-nhau/assets/js/main.js'
 ];
 
 /* Start the service worker and cache all of the app's content */
