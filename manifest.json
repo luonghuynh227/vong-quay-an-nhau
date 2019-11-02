@@ -1,0 +1,42 @@
+{
+  "short_name": "Vòng quay ăn nhậu",
+  "name": "Vòng quay ăn nhậu",
+  "description": "Vòng quay ăn nhậu, vòng quay bàn nhậu, vòng quay chém gió sau cuộc nhậu, vòng quay chém gió vui vẻ",
+  "icons": [
+    {
+      "src": "favicons/hello-icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "favicons/apple-icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "favicons/apple-icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "favicons/android-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "favicons/ms-icon-150x150.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "favicons/ms-icon-150x150.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "lang": "en-US",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#426970",
+  "theme_color": "#426970"
+}
