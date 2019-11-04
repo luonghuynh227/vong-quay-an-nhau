@@ -60,19 +60,24 @@
 	<meta name="msapplication-TileColor" content="#426970">
 	<meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
 	<meta name="theme-color" content="#426970">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap&subset=vietnamese"
+    rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<!-- <script src="assets/js/add_home.js" defer=""></script> -->
 </head>
 
 <body>
-	<!-- <button class="add-button">Add to home screen</button> -->
-	<style>
-		.add-button {
-			position: absolute;
-			top: 1px;
-			left: 1px;
-		}
-	</style>
+	<div class="ios-prompt">
+		<div class="content-prompt">
+			<span class="icon-close-ios-prompt">&times;</span>
+			<img src="images/add2home.svg" alt="" class="icon-add-prompt">
+			<div class="txt-ios-prompt">
+				Để cài đặt Ứng dụng web này trong iPhone / iPad, nhấn vào biểu tượng <img class="icon-share-prompt"
+					src="images/share.svg" alt=""> và sau đó Thêm vào MH chính.
+			</div>
+		</div>
+		</div>
+
 	<div class="main-wheel">
 		<div class="spin-wheel">
 			<div class="container">
@@ -290,7 +295,56 @@
 		});
 	</script>
 	<script src="assets/js/main.js"></script>
-	<!-- <script src="sw-vongquay.js"></script> -->
+	<!-- TODO: Handle prompt IOS -->
+  <script type="text/javascript">
+
+    function addToHomeScreen() {
+      deferredPrompt_mobile.prompt();
+      // Wait for the user to respond to the prompt
+      deferredPrompt_mobile.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+          console.log('User accepted the A2HS prompt');
+        } else {
+          console.log('User dismissed the A2HS prompt');
+        }
+        deferredPrompt_mobile = null;
+      });
+
+    }
+
+    let deferredPrompt_mobile;
+    window.addEventListener('beforeinstallprompt', function (e) {
+      // Prevent Chrome 67 and earlier from automatically showing the prompt
+      e.preventDefault();
+      // Stash the event so it can be triggered later.
+      deferredPrompt_mobile = e;
+
+
+    });
+
+    function showIosInstall() {
+      let iosPrompt = document.querySelector(".ios-prompt");
+      iosPrompt.style.display = "block";
+      iosPrompt.addEventListener("click", () => {
+        iosPrompt.style.display = "none";
+      });
+    }
+
+    // Detects if device is on iOS
+    const isIos = () => {
+      const userAgent = window.navigator.userAgent.toLowerCase();
+      return /iphone|ipad|ipod/.test(userAgent);
+    }
+    // Detects if device is in standalone mode
+    const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
+
+    // Checks if should display install popup notification:
+    if (isIos() && !isInStandaloneMode()) {
+      // this.setState({ showInstallMessage: true });
+      showIosInstall();
+    }
+
+  </script>
 </body>
 
 </html>

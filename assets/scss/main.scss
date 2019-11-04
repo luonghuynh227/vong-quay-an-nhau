@@ -41,6 +41,47 @@ body {
       width: 1000px;
   }
 }
+// TODO: Prompt IOS
+.ios-prompt {
+  display: none;
+  
+  .content-prompt {
+    box-sizing: border-box;
+    font-size: 15px;
+    position: fixed;
+    bottom: 2%;
+    background-color: #fcfcfc;
+    border: 1px solid #bcbcbc;
+    border-radius: 10px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    width: 100%;
+    width: 95%;
+    max-width: 550px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .icon-close-ios-prompt {
+    position: absolute;
+    right: 6px;
+    top: 0;
+    font-size: 28px;
+  }
+  .icon-add-prompt {
+    width: 25%;
+    max-width: 60px;
+  }
+  .txt-ios-prompt {
+    line-height: 1.5;
+    margin-left: 15px;
+  }
+  .icon-share-prompt {
+    width: 4%;
+    margin: 0 4px;
+  }
+}
 
 
 // partials
