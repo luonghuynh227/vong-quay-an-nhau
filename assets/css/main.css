@@ -415,6 +415,8 @@ body {
 
 .ios-prompt {
   display: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 .ios-prompt .content-prompt {
