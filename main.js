@@ -3,6 +3,6 @@ window.onload = () => {
 
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-             .register('/sw-vongquay.js');
+             .register('sw-vongquay.js');
   }
 }
