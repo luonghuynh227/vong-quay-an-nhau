@@ -1,9 +1,8 @@
 var cacheName = 'vipvq';
 var filesToCache = [
-  '/',
+  // '/',
   'index.html',
   'assets/css/main.css',
-  'assets/css/main.css.map',
   'assets/fonts/vl_booster_nextfy_black.ttf',
   'assets/fonts/vl_booster_nextfy_think.ttf',
   'assets/images/wheel.png',
@@ -12,7 +11,6 @@ var filesToCache = [
   'assets/images/muiten.png',
   'assets/images/bg.jpg',
   'assets/js/jquery-3.4.1.min.js',
-  'assets/js/app.js',
   'assets/js/main.js'
 ];
 
