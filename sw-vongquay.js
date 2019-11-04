@@ -1,4 +1,4 @@
-var cacheName = 'vong-quay-daya';
+var cacheName = 'vipvq';
 var filesToCache = [
   '/',
   'index.html',
