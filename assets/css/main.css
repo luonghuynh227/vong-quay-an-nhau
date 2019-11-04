@@ -424,6 +424,7 @@ body {
   box-sizing: border-box;
   font-size: 15px;
   position: fixed;
+  z-index: 9;
   bottom: 2%;
   background-color: #fcfcfc;
   border: 1px solid #bcbcbc;
