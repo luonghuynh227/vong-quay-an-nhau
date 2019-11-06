@@ -13,7 +13,7 @@ body {
     min-height: 100vh;
     // height: 2000px;
     overflow-x: hidden !important;
-    background: $bg;
+    // background: $bg;
     background-position: center top;
     @include max_devices(1023) {
         

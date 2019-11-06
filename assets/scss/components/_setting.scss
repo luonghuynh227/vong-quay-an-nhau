@@ -23,6 +23,7 @@
 	.text-setting {
 		font-size: 18px;
 		margin-bottom: 5px;
+		color: #426970;
 		@include devices(1000) {
 			font-size: 20px;
 			margin-bottom: 10px;
@@ -36,7 +37,7 @@
 	border: 2px solid #426970;
 	background: transparent;
 	text-align-last: center;
-	color: #fff;
+	color: #426970;
 	font-size: 16px;
 	font-family: "vl_booster_nextfy_black";
 	@include devices(1000) {
