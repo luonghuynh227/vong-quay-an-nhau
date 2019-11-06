@@ -1,4 +1,4 @@
-var cacheName = 'vipvq';
+var cacheName = 'hoangtumoi';
 var filesToCache = [
   // '/',
   'index.html',
