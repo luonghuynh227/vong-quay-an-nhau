@@ -11,7 +11,7 @@ var filesToCache = [
   'assets/images/muiten.png',
   'assets/images/bg.jpg',
   'assets/js/jquery-3.4.1.min.js',
-  'assets/js/main.js'
+  'assets/js/main.js?v=06112019'
 ];
 
 /* Start the service worker and cache all of the app's content */
