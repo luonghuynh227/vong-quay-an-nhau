@@ -395,6 +395,10 @@ body {
   line-height: 1.5;
   font-weight: 300;
   color: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, from(#9796f0), to(#fbc7d4));
+  background: -webkit-linear-gradient(left, #9796f0, #fbc7d4);
+  background: -o-linear-gradient(left, #9796f0, #fbc7d4);
+  background: linear-gradient(to right, #9796f0, #fbc7d4);
   min-height: 100vh;
   overflow-x: hidden !important;
   background: url(../images/bg.jpg) no-repeat;
