@@ -46,6 +46,6 @@
   "lang": "en-US",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "linear-gradient(to right, rgb(151, 150, 240), rgb(251, 199, 212))",
+  "background_color": "#9796f0",
   "theme_color": "#9796f0"
 }
