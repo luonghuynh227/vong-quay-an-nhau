@@ -1,8 +1,8 @@
 var cacheName = 'hoangtumoi';
 var filesToCache = [
   // '/',
-  'index.html',
-  'assets/css/main.css',
+  'index.html?v=06112019',
+  'assets/css/main.css?v=06112019',
   'assets/fonts/vl_booster_nextfy_black.ttf',
   'assets/fonts/vl_booster_nextfy_think.ttf',
   'assets/images/wheel.png',
