@@ -31,11 +31,21 @@
       "src": "favicons/ms-icon-150x150.png",
       "sizes": "512x512",
       "type": "image/png"
+    },
+    {
+      "src": "splash-ios/manifest-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "splash-ios/manifest-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
   "lang": "en-US",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#426970",
+  "background_color": "linear-gradient(to right, rgb(151, 150, 240), rgb(251, 199, 212))",
   "theme_color": "#426970"
 }
